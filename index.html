@@ -1,0 +1,191 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" `content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <span>Portfolio</span>
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <span2 class="menu-icon click" onclick="closemenu()">&#215;</span2>
+                </ul>
+                <span2 class="click" onclick="openmenu()">&#9776;</span2>
+            </nav>
+        </div>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Muskan</span><br> Kumari</h1>
+        </div>
+        <a href="muskancv.pdf" download class="btn btn2">Download CV</a>
+    </div>
+    <!------------ about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col"></div>
+                <h1 class="sub-titles">About Me</h1>
+                <p>I am a web developer skilled in HTML, CSS, JavaScript, Git and Github passionate about creating
+                    user-friendly and responsive websites. With a strong foundation in version control and collaborative
+                    development, I leverage Git and GitHub for efficient project management. I am enthusiastic about
+                    continuous learning and embracing new technologies to improve my development skills. Currently, I am
+                    eager to expand my expertise in frontend frameworks like React.js and explore advanced concepts such
+                    as responsive design and web accessibility to build more dynamic and accessible web applications.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links  " onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links " onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML & CSS</span><br>Building blocks of web development.</li>
+                        <li><span>JavaScript</span><br>JavaScript is enables interactive elements on web pages</li>
+                        <li><span>Git & Github</span><br>Version control with Git, hosted on GitHub.</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <!-- <li><span>2024 </span><br>Designing and building websites and applications.</li> -->
+                        <li><span>2024 - current </span><br>Web Developer intern in Orinson Technologies</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Creating websites and web applications</li>
+                        <li><span>2022 - 2026</span><br>B.Tech cse at Amity University Noida</li>
+                        <li><span>2022 </span><br>12th at Mirza Ghalib College,Gaya</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------- projects --------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="title">My Projects</h1>
+        </div>
+        <div class="projects-list">
+            <div>
+                <h2>Netflix Clone</h2>
+                <p>Creating a Netflix clone using HTML and CSS involves replicating its layout with grids for movie
+                    thumbnails, a navigation bar, and responsive design for different screens, emphasizing visual
+                    fidelity and usability akin to the original platform.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <h2>Flipkart Clone</h2>
+                <p>Creating a Flipkart clone using HTML and CSS involves replicating its layout with product grids,
+                    navigation bars, and responsive design for various devices. Emphasis on user interface and
+                    functionality akin to the original e-commerce platform.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <h2>Portfolio</h2>
+                <p>Creating my own portfolio using HTML, CSS, and JavaScript involves designing a personal website to
+                    showcase my skills and projects. It includes sections like about me, projects, contact information,
+                    and also incorporate interactive elements for a dynamic user experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <h2>Landing Page</h2>
+                <p> Create a dynamic landing page for "Smile Bites," a bakery, using HTML, CSS, and JavaScript. HTML
+                    structures sections for featured products, special offers, and a contact
+                    form. CSS styles the page with a warm color scheme and playful fonts. JavaScript enhances user
+                    experience with interactive elements like a sticky menu and smooth scroll animations.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+
+            <div>
+                <h2>HappyHue</h2>
+                <p>The HappyHue landing page is a visually appealing eCommerce site created using HTML, CSS, and
+                    JavaScript. Its clean, responsive layout showcases products effectively with dynamic styling, hover
+                    effects, and bold color schemes. JavaScript enhances the user experience through smooth animations,
+                    interactive product previews, and seamless navigation, offering visitors an engaging and efficient
+                    platform to browse and shop.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div>
+                <h2>WeatherWhiz</h2>
+                <p>WeatherWhiz is a dynamic weather check app built using HTML, CSS, and JavaScript. It offers a clean,
+                    responsive design that adapts to any device, providing real-time weather updates based on user
+                    location. HTML structures the app content, while CSS ensures a visually appealing interface with
+                    animations and smooth transitions. JavaScript handles functionality like fetching weather data from
+                    APIs, updating forecasts instantly, and adding interactive features for an engaging and
+                    user-friendly experience.</p>
+                <a href="#">Learn more</a </div>
+
+            </div>
+
+            <div>
+                <h2>autoEye</h2>
+                <p>AutoEye is a application developed using Python to detect vehicle color, speed, and license
+                    plate numbers. It leverages computer vision libraries like OpenCV for real-time video processing and
+                    machine learning algorithms to identify and classify vehicle colors. By analyzing video frames, the
+                    app accurately measures vehicle speed and uses Optical Character Recognition (OCR) to extract
+                    license plate numbers, making it an efficient tool for traffic monitoring and law enforcement
+                    applications.</p>
+                <a href="#">Learn more</a </div>
+
+            </div>
+
+            <a href="#" class="btn btn1">See more</a>
+        </div>
+        <!-- ----------------Contact------------------ -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p> <span><i class="fa-solid fa-paper-plane"></i></span> semuskancse@gmail.com</p>
+                        <p><span><i class="fa-solid fa-phone"></i></span>9576677512</p>
+
+                        <div class="social-icons">
+                            <a href="twitter"><span><i class="fa-brands fa-square-twitter"></i></span></a>
+                            <a href="https://github.com/semuskan  "><span><i
+                                        class="fa-brands fa-square-github"></i></span></a>
+                            <a href="Insta"><span><i class="fa-brands fa-square-instagram"></i></span></a>
+                            <a href="https://www.linkedin.com/in/semuskan/"><span><i
+                                        class="fa-brands fa-linkedin"></i></span></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2 btn3">Submit</button>
+                        </form>
+
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &#169; Muskan. Made with<i>&#10084;</i>Me</p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/d20f303d36.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
